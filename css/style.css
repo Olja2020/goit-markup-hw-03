@@ -1,3 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
 .body_style {
   color: #434455;
   font-family: "Roboto", sans-serif;
@@ -7,8 +21,35 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   cursor: pointer;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 156px;
+  margin-right: 156px;
+}
+img {
+  display: block;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.main-nav {
+  display: flex;
+}
+.container.main-header {
+  display: flex;
 }
 
+. section-solutions {
+  background-color: #f4f4fd;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -18,6 +59,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo span {
   color: #2e2f42;
@@ -28,20 +70,52 @@
 .ul_link,
 .menu_list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ul_link:not(last-child),
+.menu_list:not(last-chid),
+.link {
+  gap: 24px;
+}
+.menu_list {
+  margin-right: 332px;
+}
+.solutions li {
+  width: calc((100% - 72px) / 4);
+}
+.ul_link .team {
+  justify_content: center;
 }
 .ul_link .link,
 .menu_list .link {
   text-decoration: none;
   color: #2e2f42;
 }
+
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .ul_link .link {
   font-weight: 400;
   font-style: normal;
   color: #434455;
 }
+.ul_link li {
+}
 .menu_list .link:hover,
 .ul_link .link:hover {
   color: #404bbf;
+}
+.link_team .text,
+.portfolio .text {
+  padding-bottom: 32px;
+}
+.header_block {
+  padding-top: 32px;
 }
 
 .menu_list .link:focus,
@@ -59,6 +133,14 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 48px;
+}
+.link_team,
+.portfolio li,
+.section_solutions .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section_solutions,
 .footer_style {
@@ -73,6 +155,8 @@
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .button_section_solutions:hover {
@@ -103,6 +187,7 @@
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 71px;
 }
 
 .header_section {
@@ -115,6 +200,7 @@
 }
 .link_team {
   background-color: #ffffff;
+  width: calc((100%-72px) / 4);
 }
 
 .footer_style .studio {
@@ -123,4 +209,13 @@
 
 .footer_style .logo {
   color: #4d5ae5;
+}
+.footer_style {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+}
+
+.text.footer {
+  width: 264px;
+  margin-top: 17.5px;
 }
