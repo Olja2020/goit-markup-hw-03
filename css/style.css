@@ -77,7 +77,13 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+.main_li {
+  margin-right: 40px;
+}
 
+.main_li:last-chid {
+  margin-right: 0;
+}
 .ul_link:not(last-child),
 .menu_list:not(last-chid) {
   gap: 24px;
@@ -86,9 +92,7 @@ img {
 .list_header {
   gap: 40px;
 }
-.menu_list {
-  margin-right: 332px;
-}
+
 .solutions li {
   width: calc((100% - 72px) / 4);
 }
@@ -213,10 +217,8 @@ header {
 }
 .text {
   font-weight: 400;
-  
 }
 .text.text_team {
-  
   text-align: center;
 }
 .header_section_text {
