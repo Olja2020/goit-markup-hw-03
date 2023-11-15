@@ -213,6 +213,10 @@ header {
 }
 .text {
   font-weight: 400;
+  
+}
+.text.text_team {
+  
   text-align: center;
 }
 .header_section_text {
