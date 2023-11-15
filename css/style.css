@@ -32,6 +32,8 @@ ol {
   padding-right: 0;
   margin-left: 156px;
   margin-right: 156px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 img {
   display: block;
@@ -42,6 +44,7 @@ img {
 }
 .main-nav {
   display: flex;
+  align-items: center;
 }
 .container.main-header {
   display: flex;
@@ -76,9 +79,11 @@ img {
 }
 
 .ul_link:not(last-child),
-.menu_list:not(last-chid),
-.link {
+.menu_list:not(last-chid) {
   gap: 24px;
+}
+.link {
+  gap: 40px;
 }
 .menu_list {
   margin-right: 332px;
@@ -94,10 +99,10 @@ img {
   text-decoration: none;
   color: #2e2f42;
 }
-
+.main_li {
+  padding: 24px 0;
+}
 header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
 .ul_link .link {
@@ -117,6 +122,7 @@ header {
 }
 .header_block {
   padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .menu_list .link:focus,
@@ -135,19 +141,35 @@ header {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 48px;
+  max-width: 496px;
+}
+.portfolio {
+  row-gap: 48px;
+}
+.li_section_four {
+  width: calc((100% - 48px) / 3);
+}
+.link_team {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .link_team,
-.portfolio li,
 .section_solutions .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio li {
-  border: 1px solid #e7e9fc;
-}
+
 .portfolios {
   border-bottom: 1px solid #e7e9fc;
+}
+.section_solutions {
+  padding: 188px 0;
+}
+.text_div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .section_solutions,
 .footer_style {
@@ -164,8 +186,10 @@ header {
   font-weight: 500;
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
-
 .button_section_solutions:hover {
   background-color: #404bbf;
 }
@@ -183,8 +207,12 @@ header {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.block {
+  text-align: center;
+}
 .text {
   font-weight: 400;
+  text-align: center;
 }
 .header_section_text {
   font-size: 36px;
@@ -197,7 +225,7 @@ header {
   margin-bottom: 71px;
 }
 
-.header_section {
+.visually-hidden {
   visibility: hidden;
   line-height: 1.2;
   font-weight: 500;
@@ -209,6 +237,9 @@ header {
   background-color: #ffffff;
   width: calc((100%-72px) / 4);
 }
+.div_team {
+  padding: 32px 0;
+}
 
 .footer_style .studio {
   color: #f4f4fd;
@@ -216,13 +247,13 @@ header {
 
 .footer_style .logo {
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer_style {
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .text.footer {
   width: 264px;
-  margin-top: 17.5px;
 }
