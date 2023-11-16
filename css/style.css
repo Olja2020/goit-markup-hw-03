@@ -82,12 +82,12 @@ img {
   margin-right: 40px;
 }
 
-.main_li:last-chid {
+.main_li:last-child {
   margin-right: 0;
 }
-.ul_link.solutions:not(last-child),
-.ul_link.team:not(last-child),
-.ul_link.portfolio:not(last-child) {
+.ul_link.solutions,
+.ul_link.team,
+.ul_link.portfolio {
   gap: 24px;
 }
 
@@ -146,7 +146,7 @@ header {
   margin-bottom: 48px;
   max-width: 496px;
 }
-.ul_link.portfolio {
+.ul_link.portfolio.link_ul {
   row-gap: 48px;
 }
 .li_section_four {
