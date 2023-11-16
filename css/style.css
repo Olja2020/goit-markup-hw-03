@@ -20,11 +20,6 @@ ol {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  cursor: pointer;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
 }
 .container {
   max-width: 1158px;
@@ -63,6 +58,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+}
+.logo_nav {
   margin-right: 76px;
 }
 .logo span {
@@ -104,6 +101,7 @@ img {
 }
 .link {
   padding: 24px 0;
+  display: block;
 }
 header {
   border-bottom: 1px solid #e7e9fc;
@@ -119,12 +117,8 @@ header {
 .ul_link .link:hover {
   color: #404bbf;
 }
-.link_team .text,
-.portfolio .text {
-  padding-bottom: 32px;
-}
+
 .header_block {
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 
@@ -145,6 +139,8 @@ header {
   color: #ffffff;
   margin-bottom: 48px;
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .ul_link.portfolio.link_ul {
   row-gap: 48px;
@@ -155,12 +151,6 @@ header {
 .link_team.team_link {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-}
-.link_team,
-.section_solutions .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .portfolios {
@@ -179,7 +169,7 @@ header {
   background-color: #2e2f42;
   color: #f4f4fd;
 }
-.button_section_solutions {
+.button_section_solutions.section_button {
   background-color: #4d5ae5;
   color: #ffffff;
   letter-spacing: 0.04em;
@@ -192,6 +182,9 @@ header {
   min-width: 169px;
   height: 56px;
   border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button_section_solutions:hover {
   background-color: #404bbf;
