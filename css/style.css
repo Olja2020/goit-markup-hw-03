@@ -136,7 +136,7 @@ header {
 .menu_list .link:active {
   text-decoration: underline;
 }
-.main_title {
+.main_title.title_main {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
