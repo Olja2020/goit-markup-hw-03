@@ -48,6 +48,7 @@ img {
 }
 .container.main-header {
   display: flex;
+  justify-content: space-between;
 }
 
 . section-solutions {
@@ -84,13 +85,10 @@ img {
 .main_li:last-chid {
   margin-right: 0;
 }
-.ul_link:not(last-child),
-.menu_list:not(last-chid) {
+.ul_link.solutions:not(last-child),
+.ul_link.team:not(last-child),
+.ul_link.portfolio:not(last-child) {
   gap: 24px;
-}
-.link_header,
-.list_header {
-  gap: 40px;
 }
 
 .solutions li {
@@ -231,13 +229,19 @@ header {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header_section_two {
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.02em;
